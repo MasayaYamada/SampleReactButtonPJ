@@ -57,7 +57,7 @@ class _ItemState extends State<Item> with AutomaticKeepAliveClientMixin {
                         },
                         reactions: widget.reactions,
                         initialReaction: Data.defaultInitialReaction,
-                        selectedReaction: widget.reactions[1],
+                        selectedReaction: widget.reactions[0],
                       ),
                     ),
                   ),
