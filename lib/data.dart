@@ -8,7 +8,7 @@ final defaultInitialReaction = Reaction(
 final reactions = [
   Reaction(
     title: _buildTitle('Happy'),
-    // previewIcon: _buildReactionsPreviewIcon('assets/images/happy.png'),
+    previewIcon: _buildReactionsPreviewIcon('assets/images/happy.png'),
     icon: _buildReactionsIcon(
       'assets/images/happy.png',
       Text(
@@ -21,7 +21,7 @@ final reactions = [
   ),
   Reaction(
     title: _buildTitle('Angry'),
-    // previewIcon: _buildReactionsPreviewIcon('assets/images/angry.png'),
+    previewIcon: _buildReactionsPreviewIcon('assets/images/angry.png'),
     icon: _buildReactionsIcon(
       'assets/images/angry.png',
       Text(
@@ -34,7 +34,7 @@ final reactions = [
   ),
   Reaction(
     title: _buildTitle('In love'),
-    // previewIcon: _buildReactionsPreviewIcon('assets/images/in-love.png'),
+    previewIcon: _buildReactionsPreviewIcon('assets/images/in-love.png'),
     icon: _buildReactionsIcon(
       'assets/images/in-love.png',
       Text(
@@ -47,7 +47,7 @@ final reactions = [
   ),
   Reaction(
     title: _buildTitle('Sad'),
-    // previewIcon: _buildReactionsPreviewIcon('assets/images/sad.png'),
+    previewIcon: _buildReactionsPreviewIcon('assets/images/sad.png'),
     icon: _buildReactionsIcon(
       'assets/images/sad.png',
       Text(
@@ -76,10 +76,10 @@ Widget _buildTitle(String title) => Container(
       ),
     );
 
-// Widget _buildReactionsPreviewIcon(String path) => Padding(
-//       padding: const EdgeInsets.symmetric(horizontal: 3.5, vertical: 5),
-//       child: Image.asset(path, height: 40),
-//     );
+Widget _buildReactionsPreviewIcon(String path) => Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 3.5, vertical: 5),
+      child: Image.asset(path, height: 40),
+    );
 
 Widget _buildReactionsIcon(String path, Text text) => Container(
       color: Colors.transparent,

@@ -49,6 +49,7 @@ class _ItemState extends State<Item> with AutomaticKeepAliveClientMixin {
                 children: [
                   SizedBox(
                     width: MediaQuery.of(context).size.width * .2,
+                    // ここでリアクションボタンのセクションを実装
                     child: FittedBox(
                       child: FlutterReactionButtonCheck(
                         onReactionChanged: (reaction, index, isChecked) {
